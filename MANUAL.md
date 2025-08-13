@@ -53,6 +53,8 @@ methods (e.g., ordering special food from a local vendor).
 ## Registration, Talk Proposals, and Attendance
 
 This section discusses the thought process behind the forms that were provided to attendees.
+Example registration and talk proposal forms can be found at in this
+[Google Drive Folder](https://drive.google.com/drive/folders/1GcSVCI8AG91sgIT3OJG5lHxVpOkjjU2_?usp=drive_link).
 
 ### Registration
 
