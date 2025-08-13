@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2550 3300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.790527,0,0,0.790527,7.73802,79.4645)">
+        <g transform="matrix(4.76153,0,0,4.76153,-1464.74,-4717.94)">
+            <g transform="matrix(36.4826,0,0,36.4826,926.41,1102.15)">
+            </g>
+            <text x="352.648px" y="1102.15px" style="font-family:'Oswald-Regular', 'Oswald';font-size:36.483px;">PROGRAMMING LANGUA<tspan x="678.328px " y="1102.15px ">G</tspan>ES AND SYSTEMS</text>
+        </g>
+        <g transform="matrix(3.74465,0,0,3.74465,-1503.58,-3435.59)">
+            <g transform="matrix(42.8389,0,0,42.8389,602.678,1102.15)">
+            </g>
+            <text x="460.153px" y="1102.15px" style="font-family:'Oswald-Regular', 'Oswald';font-size:42.839px;">SEMINAR</text>
+        </g>
+        <g transform="matrix(3.74465,0,0,3.74465,405.782,-3435.59)">
+            <g transform="matrix(42.8389,0,0,42.8389,678.845,1102.15)">
+            </g>
+            <text x="451.927px" y="1102.15px" style="font-family:'Oswald-Medium', 'Oswald';font-weight:500;font-size:42.839px;fill:rgb(230,130,7);">MA<tspan x="502.22px " y="1102.15px ">Y</tspan> 19, 2023</text>
+        </g>
+        <g transform="matrix(3.74465,0,0,3.74465,-1509.5,-3770.96)">
+            <g transform="matrix(42.8389,0,0,42.8389,652.114,1102.15)">
+            </g>
+            <text x="460.153px" y="1102.15px" style="font-family:'Oswald-Regular', 'Oswald';font-size:42.839px;">NEW JERSEY</text>
+        </g>
+    </g>
+    <g transform="matrix(1.04907,-0.193848,0.180954,0.979295,-1016.5,-26.2135)">
+        <g transform="matrix(1.02417,0.163216,-0.268816,2.28085,361.026,-865.601)">
+            <path d="M1727.67,-198.343L3764.05,1322.26L3791.81,-219.555L1727.67,-198.343Z" style="fill:rgb(0,71,125);fill-opacity:0.52;"/>
+        </g>
+        <g transform="matrix(0.988777,-0.296468,0.615553,2.22231,-28.8937,435.286)">
+            <path d="M1727.67,-198.343L3764.05,1322.26L3791.81,-219.555L1727.67,-198.343Z" style="fill:rgb(0,71,125);fill-opacity:0.52;"/>
+        </g>
+        <g transform="matrix(0.783617,-0.705252,1.39424,1.78222,107.964,1806.07)">
+            <path d="M1727.67,-198.343L3764.05,1322.26L3791.81,-219.555L1727.67,-198.343Z" style="fill:rgb(0,71,125);fill-opacity:0.52;"/>
+        </g>
+    </g>
+    <g transform="matrix(-1.00389,0.129871,-0.121233,-0.937114,3647.22,3379.42)">
+        <g transform="matrix(1.02417,0.163216,-0.268816,2.28085,361.026,-865.601)">
+            <path d="M1727.67,-198.343L3764.05,1322.26L3791.81,-219.555L1727.67,-198.343Z" style="fill:rgb(0,71,125);fill-opacity:0.52;"/>
+        </g>
+        <g transform="matrix(0.988777,-0.296468,0.615553,2.22231,-28.8937,435.286)">
+            <path d="M1727.67,-198.343L3764.05,1322.26L3791.81,-219.555L1727.67,-198.343Z" style="fill:rgb(0,71,125);fill-opacity:0.52;"/>
+        </g>
+        <g transform="matrix(0.783617,-0.705252,1.39424,1.78222,107.964,1806.07)">
+            <path d="M1727.67,-198.343L3764.05,1322.26L3791.81,-219.555L1727.67,-198.343Z" style="fill:rgb(0,71,125);fill-opacity:0.52;"/>
+        </g>
+    </g>
+    <g transform="matrix(2.30659,0,0,2.65696,-473.8,135.826)">
+        <rect x="237.927" y="272.765" width="1037.07" height="675.235" style="fill:none;"/>
+    </g>
+    <g transform="matrix(0.428232,0,0,0.428232,453.44,1308.82)">
+        <g transform="matrix(583.796,0,0,583.796,4200.26,1708.8)">
+        </g>
+        <text x="-353.347px" y="1708.8px" style="font-family:'Oswald-Light', 'Oswald';font-weight:300;font-size:583.796px;">Wu &amp; Chen Auditorium</text>
+    </g>
+    <g transform="matrix(0.888298,0,0,0.888298,-418.176,178.29)">
+        <g transform="matrix(609.78,0,0,609.78,2489.64,1708.8)">
+        </g>
+        <text x="1357.28px" y="1708.8px" style="font-family:'Oswald-Regular', 'Oswald';font-size:609.78px;">T<tspan x="1600.58px " y="1708.8px ">a</tspan>lks</text>
+    </g>
+</svg>
