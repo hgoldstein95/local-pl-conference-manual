@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="may2023.css">
+  <title>NJPLS May 2023</title>
+</head>
+
+<body>
+  <div id="banner"></div>
+  <div class="content">
+    <div class="header">
+      <h1 class="title">
+        <span class="light">New Jersey</span><br />
+        Programming Languages and Systems<br />
+        <span class="light">Seminar</span>
+      </h1>
+      <div class="cta">
+        <h2 class="date">May 19, 2023</h2>
+        <h2 class="location">University of Pennsylvania</h2>
+      </div>
+
+      <p>
+        The <a href="https://njpls.org">New Jersey Programming Languages and Systems Seminar
+          (NJPLS)</a> brings researchers in the New Jersey area together for a day of informal talks
+        and discussions. We accept talks on complete research and work in progress, dealing with
+        topics of interest to the programming languages and systems communities. See the talk
+        proposal form for more information.
+      </p>
+
+      <p>
+        <strong>Registration is free thanks to <a href="https://www.janestreet.com/">Jane Street</a>!</strong>
+      </p>
+
+      <table class="details">
+        <tr>
+          <td><strong>When</strong></td>
+          <td>Friday May 19, 2023</td>
+        </tr>
+        <tr>
+          <td><strong>Where</strong></td>
+          <td>Levine Hall &middot; <a href="https://goo.gl/maps/kzomboXEdNXfyTkt7">3330 Walnut Street Philadelphia, PA
+              19104</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>What</strong></td>
+          <td>Research talks and discussions. Breakfast, lunch, and coffee provided.</td>
+        </tr>
+      </table>
+
+      <p>
+        Registration is closed. Contact <a href="mailto:hgo@seas.upenn.edu">hgo@seas.upenn.edu</a> with questions or
+        concerns.
+      </p>
+
+      <hr />
+
+      <h3 class="schedule-title">Program</h3>
+
+      <table class="schedule">
+        <tr class="break">
+          <td>9:00 AM</td>
+          <td>Breakfast and Sign-in</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9:55 AM</td>
+          <td>Welcome</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td><strong>Unboxed Types in OCaml</strong></td>
+          <td align="right">Richard Eisenberg<br><em>Jane Street</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                OCaml is the biggest development language at Jane Street Capital, powering client-facing systems,
+                implementing trading strategies, and interfacing with exchanges around the world. For some of our
+                strategies, low-latency execution of a trade is vital -- every microsecond counts. In such systems, the
+                unpredictability of OCaml's garbage collection can be disastrous. We thus have teams who have developed
+                approaches to writing OCaml code that does not allocate new structures on the heap (and thus avoids
+                garbage collection); this code is difficult to write and maintain.
+              </p>
+              <p>
+                We are thus designing a plan to bring unboxed types to OCaml. Unboxed types exist in most other
+                languages; they are sometimes called value types. Constructing an element of an unboxed type requires no
+                allocation -- that is, no box. OCaml has resisted unboxed types because it is hard for a language to mix
+                both unboxed types and parametric polymorphism (also called generic functions). This talk will describe
+                why unboxed types and polymorphism don't mix and will explore aspects of our upcoming design and
+                implementation.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td>10:20 AM</td>
+          <td><strong>Intensional Functions</strong></td>
+          <td align="right">Zachary Palmer<br><em>Swarthmore</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                Functions in functional languages have a single eliminator — application — and cannot be compared,
+                hashed, or subjected to other non-application operations. Such operations are usually approximated via
+                defunctionalization: functions are replaced with first-order data and calls are replaced with
+                invocations
+                of
+                a dispatch function. We can then subject these first-order data to e.g. approximate equality, allowing
+                (among other operations) the deduplication of continuations in a long-running computation.
+                Unfortunately,
+                surface-level defunctionalization is a laborious, error-prone, and maintenance-inducing transformation.
+              </p>
+              <p>
+                In this talk, we discuss ""intensional functions"": a language feature which provides an alternative to
+                manual defunctionalization. Intensional functions support non-application operations such as equality or
+                hashing in terms of the program point at which the function was defined and the values it captured in
+                closure. We then discuss one implication of this language feature: as intensional functions are
+                functions
+                which can be compared, hashed, and so on, so ""intensional monads"" are composable units of computation
+                which can be compared, hashed, and so on. We illustrate this discussion with a practical example: the
+                legible definition of efficient deductive closures."
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td>10:40 AM</td>
+          <td><strong>Cutting the Cake: A Language for Fair Division</strong></td>
+          <td align="right">Justin Hsu<br><em>Cornell</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                The fair division literature in economics considers how to divide resources between
+                multiple agents such that the allocation is envy-free: each agent receives their
+                favorite piece. Researchers have developed a variety of fair division protocols for the
+                most standard setting, where the agents want to split a single item, however, the
+                protocols are highly intricate and the proofs of envy-freeness involve tedious case
+                analysis.
+              </p>
+              <p>
+                We propose Slice, a domain specific language for fair-division. Programs in our language
+                can be converted to logical formulas encoding envy-freeness and other target properties.
+                Then, the constraints can be dispatched to automated solvers. We prove that our
+                constraint generation procedure is sound and complete. We also report on a prototype
+                implementation of Slice, which we have used to automatically check envy-freeness for
+                several protocols from the fair division literature.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr class="break">
+          <td>11:00 AM</td>
+          <td>Coffee</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:20 AM</td>
+          <td><strong>Automatic Detection of Power Side-Channel Vulnerabilities in Constant-Time Cryptographic
+              Code</strong></td>
+          <td align="right">Ferhat Erata<br><em>Yale</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary class="no-lift">Abstract</summary>
+              <p>
+                Cryptographic systems can be vulnerable to side-channel attacks, which can reveal sensitive information
+                through means other than the expected output. Power side-channel vulnerabilities occur during the
+                execution of cryptographic code when the power consumption of the system varies depending on the secret
+                data being processed. Detecting these vulnerabilities is a challenging task, requiring analysis of
+                low-level code to determine which instructions could be leaking information based on the state of
+                registers. Therefore, in this ongoing research project, we propose automated reasoning methods to detect
+                power side-channel insecurities in cryptographic code. We employ novel register analysis techniques
+                using
+                differential program analysis over fixed bit-vector arithmetic. Our initial work, which focused on
+                single-trace side-channel vulnerabilities, will be presented at the 2023 IEEE 8th European Symposium on
+                Security and Privacy (EuroS&P)*. Our follow-up work, currently under submission, will expand on this
+                approach to efficiently analyze multi-trace side-channel vulnerabilities by incorporating dynamic
+                analysis
+                and a new inference system built on top of approximate model counting.
+              </p>
+              <p>
+                This research project represents an exciting intersection of formal methods and low-level code analysis.
+                Our work has the potential to benefit participants in the fields of Programming Languages and Systems.
+                Our
+                presentation includes a live demo that showcases the effectiveness of our approach in detecting
+                vulnerabilities and debugging some security proofs.
+
+                <a href=https://arxiv.org/abs/2304.02102>https://arxiv.org/abs/2304.02102</a>
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td>11:40 AM</td>
+          <td><strong>Verifying the Verifier: eBPF Range Analysis Verification</strong></td>
+          <td align="right">Harishankar Vishwanathan<br><em>Rutgers</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                We present an automated method to verify the correctness of range analysis used in the eBPF verifier
+                of the Linux Kernel. We define a soundness specification for the range analysis performed by the
+                eBPF verifier. We automatically generate verification conditions that encode the operation of the
+                range analysis directly from the Linux Kernel's C source code and check it against our
+                specification. When we discover instances where the eBPF verifier's range analysis is unsound, we
+                propose a method to generate an eBPF program that demonstrates the mismatch between the abstract and
+                the concrete semantics. Our prototype automatically checks the soundness of 16 versions of the eBPF
+                verifier in the Linux Kernel versions ranging from 4.14 to 5.19. In this process, we have discovered
+                new bugs in older versions and proved the soundness of range analysis in the latest version of the
+                Linux kernel.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td>12:00 PM</td>
+          <td><strong>Synthesizing Verifiable Quantum Compiler Optimizations</strong></td>
+          <td align="right">Runzhou Tao<br><em>Columbia</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                Quantum computing promises to be faster than classical computing for key applications, but requires
+                heavy
+                optimizations to transform a quantum program into something that a near-term quantum device can execute.
+                Unfortunately, writing quantum optimizations is error prone and not easy, and verifying their
+                correctness
+                has been too difficult to become common practice. We introduce Gungnir, the first system for
+                automatically
+                synthesizing provably correct quantum optimizations. It reduces the effort of writing and verifying
+                quantum optimizations by automatically and correctly generating them from high-level specifications that
+                are much simpler to write and verify. Gungnir provides a simple domain-specific language tailored to
+                specifying quantum circuit optimizations. Optimization algorithms are specified in terms of
+                quantum-specific reduction rules that consider quantum states and determine how regular expressions of
+                quan- tum circuits can be transformed to fit onto quantum devices, reduce gate noise, and improve
+                performance. Gungnir automatically verifies that optimizations preserve the semantics of quantum
+                circuits,
+                and uses a verified synthesizer to generate compiler passes implementing the optimizations. Gungnir
+                ensures that specifications are verifiable, the synthesized com- piler passes are correct, and
+                verification cost is almost zero. We evaluated Gungnir's effectiveness in supporting existing and
+                writing
+                new optimization passes. Using Gungnir, we specify, automatically synthesize, and automatically verify
+                19
+                of the optimization passes available in the widely-used Qiskit compiler, in some cases with an order of
+                magnitude less code that their original implementations. We use it to easily write two new verified
+                optimization passes in Qiskit and show that these optimizations can reduce the number of two-qubit gates
+                required for various quantum benchmarks versus vanilla Qiskit optimizations by multiple orders of
+                magnitude. When running the Bernstein-Vazirani quantum algorithm on a Rigetti Aspen M3 79-qubit quantum
+                computer, noise fully corrupts the results when using the best Qiskit optimization setting, but Gungnir
+                enables the algorithm to produce accurate results when the new optimizations are used.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr class="break">
+          <td>12:20 PM</td>
+          <td>Lunch</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1:40 PM</td>
+          <td><strong>Inferring Complexity Bounds from Recurrence Relations</strong></td>
+          <td align="right">Didier Ishimwe<br><em>George Mason</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                Determining program complexity bounds is a fundamental problem with a variety of applications, such as
+                performance debugging. We propose a novel approach for computing the asymptotic complexity bounds of
+                non-deterministic recursive programs by solving dynamically inferred recurrence relations. Recurrences
+                are
+                inferred from program execution traces and solved using the annihilator method and Master Theorem to
+                obtain closed-form solutions representing the complexity bounds. Our approach captures the worst-case
+                execution behavior of programs using linear templates, enabling efficient inference of linear
+                recurrences
+                that express a wide-range of complexities, including non-linear polynomial and non-polynomial,
+                logarithmic, and exponential bounds.
+              </p>
+              <p>
+                Our preliminary evaluation shows that this approach can learn correct bounds for popular classical
+                recursive
+                programs (e.g. 𝑛^2 for quicksort), achieving more precise complexity bounds for exponential programs
+                than
+                previously reported (e.g.𝑂(1.62^n)for Fibonacci). These dynamically inferred recurrences can also be
+                applied to a more general user-defined resource bounds analysis such as bounding the number of API
+                calls.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td>2:00 PM</td>
+          <td><strong>Refutation-based typechecking using symbolic execution</strong></td>
+          <td align="right">Ke Wu<br><em>Johns Hopkins</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                Finding a balance between expressiveness and static guarantees has always been a challenge for modern
+                language design. Inspired by recent works that explored the in-between space on the static-to-dynamic
+                typing spectrum, such as gradual typing and runtime contract checking, as well as various applications
+                of
+                symbolic execution and bounded model checking, we propose a novel technique that checks for type
+                "unsafety" via program instrumentation and symbolic execution. Our approach aims to both preserve the
+                high
+                expressiveness of dynamic languages, while also providing relatively rich safety guarantees for more
+                complex features such as subtyping, polymorphism, modules, and functors at compile-time.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td>2:20 PM</td>
+          <td><strong>Amortized Analysis via Coinduction</strong></td>
+          <td align="right">Harrison Grodin<br><em>Carnegie Mellon</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                Amortized analysis is a program cost analysis technique for data structures in which the cost of
+                operations is specified in aggregate, under the assumption of continued sequential use. Typically,
+                amortized analyses are presented inductively, in terms of finite sequences of operations. In this talk,
+                we
+                demonstrate that coinduction provides an elegant, equivalent characterization. We describe a classic
+                amortized data structure, the batched queue, and outline a coinductive proof of its amortized efficiency
+                in calf, a type theory for cost analysis. This talk is based on work that will be published at CALCO
+                2023.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr class="break">
+          <td>2:40 PM</td>
+          <td>Coffee</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3:20 PM</td>
+          <td><strong>Merging Inductive Relations</strong></td>
+          <td align="right">Jacob Prinz<br><em>Maryland</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                Inductive relations offer a powerful and expressive way of writing program specifications. Their
+                widespread use by proof assistant users has made them a particularly attractive target for proof
+                engineering tools such as QuickChick, a property-based testing tool for Coq which can automatically
+                derive
+                generators for values satisfying an inductive relation. However, while such generators are generally
+                efficient, there is an infrequent yet seemingly inevitable situation where their performance greatly
+                degrades: when multiple inductive relations constrain the same piece of data.
+              </p>
+              <p>
+                In this talk I will describe our addition to QuickChick, an algorithm for merging two such inductively
+                defined properties that share an index. The algorithm finds shared structure between the two relations,
+                and creates a single merged relation that is provably equivalent to the conjunction of the two. The
+                merged
+                relations can improve the performance of automatic generation by orders of magnitude.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td>3:40 PM</td>
+          <td><strong>Modalities for Location Virtualization</strong></td>
+          <td align="right">Ismail Kuru<br><em>Drexel</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                We plan to introduce modal abstractions to describe the truth of assertions in the virtual resources
+                corresponding to virtual address spaces: a modality for each concept, with corresponding assertions
+                about the underlying physical resource.
+              </p>
+              <p>
+                For virtual memory, this might correspond to an assertion [r]P indicating that P holds in the virtual
+                address space rooted at r. This is essentially what hybrid logic calls a satisfaction operator, which
+                evaluates the truth of a predicate in a named alternative state (here, address space). An example usage
+                of this would be as part of the invariant for a sleeping thread — ∃R : registerset. Context(ctxt, R) ∗
+                ∃P : Prop. [R.cr3]P ∗ {P ∗ CurrentRegs(R)}(R.rip) — that the context structure at virtual address ctxt
+                holds a certain register set, and that the precondition for the stored instruction pointer rip is that
+                register set and the virtual invariant P, which is true in the saved context’s address space rooted at
+                cr3. This would be required to ensure safety of context switches between address spaces.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td>4:00 PM</td>
+          <td><strong>A Formalization of Core Why3 in Coq</strong></td>
+          <td align="right">Joshua Cohen<br><em>Princeton</em></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                Deductive program verifiers fall into two main camps: on the one hand there are foundational tools where
+                a
+                formal semantics, a program logic, and a proof of soundness are all written in a proof assistant; on the
+                other hand there are semi-automated tools which take a user-annotated program, generate verification
+                conditions, and discharge these conditions using automated solvers. These semi-automated tools are
+                simpler
+                to use and build, thanks to intermediate verification languages like Why3 and Boogie, but they lack the
+                guarantees provided by foundational tools and rely on large trusted code bases, bugs in which can lead
+                to
+                incorrect or unsafe programs falsely verified.
+              </p>
+              <p>
+                In this work, we partially bridge the gap between these two approaches by giving a formal semantics in
+                Coq
+                for the logic fragment of Why3, a high-level logic translated to over a dozen solvers and proof
+                assistants. This logic is complex; it includes polymorphism, algebraic data types, pattern matching,
+                recursive functions and predicates, and inductive predicates; to handle these, we draw on many different
+                ideas from PL and logic. These features interact with each other in subtle ways, and this logic is very
+                different from the simpler logics used in many of the supported solvers; soundness bugs are easy to
+                introduce and hard to identify. We show that our semantics can be useful in eliminating these bugs by
+                (1)
+                giving a sound proof system for Why3 goals in Coq (2) using this proof system to verify parts of Why3's
+                standard library, and (3) proving sound some of Why3's transformations used to convert terms and
+                formulas
+                to those supported by the backend solvers.
+              </p>
+            </details>
+          </td>
+        </tr>
+        <tr class="break">
+          <td>4:20 PM</td>
+          <td>Closing Remarks</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
