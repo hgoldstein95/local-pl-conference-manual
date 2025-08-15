@@ -37,7 +37,7 @@ of 2025).
 
 This section describes tips for providing food.
 
-### Logistics
+### Food Logistics
 
 We highly recommend getting help with food logistics. It is a large job unto itself, and would be a
 pain for the organizer to have to think about during the event. Universities often have staff who
@@ -63,13 +63,14 @@ event. This includes
 
 * Email
 * Name
+* Pronouns
 * Affiliation
 * Dietary Restrictions
 * Other Comments
 
-We included a checkbox on the form to force users to double-check name tag information (starred
-above) and their email address. This can be skipped if using write-on name tags (although printed
-ones are a nice touch).
+We recommend including a checkbox on the form to force users to double-check name tag information
+(starred above) and their email address. This can be skipped if using write-on name tags (although
+printed ones are a nice touch).
 
 If opting for printed name tags, we recommend either (1) double-sided printing or (2) tags that
 connect to the lanyard on the corners rather than the center. Both would be even better.
