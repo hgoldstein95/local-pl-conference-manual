@@ -30,8 +30,8 @@ Feel free to use the designs as-is or adapt them as you see fit.
 We highly recommend finding (ideally relatively local) industrial sponsors for the event. These
 events are generally fairly informal, and asking participants to pay a registration fee may
 discourage attendance. We recommend doing your own budgeting for food and space depending on your
-projected attendance, but something in the ballpark of 5000 USD is often a good starting point (as
-of 2025).
+projected attendance. Something in the ballpark of 50 USD per person is often a good starting
+point (as of 2025), although this can vary greatly depending on your venue and food vendor(s).
 
 ## Food
 
